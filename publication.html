@@ -38,7 +38,7 @@
         </div>
 
         <!-- Journal Articles -->
-        <div class="tab-content active" id="journal">
+        <div class="tab-content" id="journal">
             <h2>Journal Articles and Book Chapters</h2>
             <div class="publication-item">
                 <p><strong>1 / 3D Baseball Pitcher Pose Reconstruction Using Joint-wise Volumetric Triangulation and Baseball Customized Filter System</strong></p>
@@ -126,7 +126,7 @@
         </div>
 
         <!-- Conference Papers -->
-        <div class="tab-content" id="conference">
+        <div class="tab-content hidden" id="conference">
             <h2>Conference and Proceeding Papers</h2>
 
             <div class="publication-item">
@@ -222,7 +222,7 @@
 
 
         <!-- Patents -->
-        <div class="tab-content" id="patents">
+        <div class="tab-content hidden" id="patents">
             <h2>Patents</h2>
 
             <div class="publication-item">
@@ -243,10 +243,13 @@
         }
 
         function showTab(tabId) {
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.classList.remove('active');
+            let content = document.querySelectorAll('.tab-content');
+
+            content.forEach(tab => {
+                tab.classList.add('hidden');
             });
-            document.querySelector(`#${tabId}`).classList.add('active');
+
+            document.querySelector(`#${tabId}`).classList.remove('hidden');
 
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 btn.classList.remove('active');
