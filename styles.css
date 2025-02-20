@@ -168,6 +168,19 @@ body {
     color: inherit;
 }
 
+/* 讓 Contact 和 收學生須知的超連結變成金色 */
+.gold-link {
+    color: #D4AF37 !important; /* 金色，並強制應用 */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.gold-link:hover {
+    text-decoration: underline;
+}
+
+
+
 .map-section {
     text-align: center;
     margin-top: 50px;
@@ -237,7 +250,7 @@ html {
     color: #555;
 }
 
-/* ----- 調整 Courses 頁面 ----- */
+/* 課程頁面樣式 */
 .course-container {
     max-width: 900px;
     margin: 0 auto;
@@ -261,10 +274,15 @@ html {
     color: #333;
 }
 
-/* 課程內容 */
-.course p {
-    font-size: 16px;
-    color: #555;
+/* 超連結設置為金色，並確保開啟新視窗 */
+.course a {
+    color: #D4AF37;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.course a:hover {
+    text-decoration: underline;
 }
 
 /* 研究頁面 */
@@ -318,40 +336,40 @@ html {
     text-align: center;
 }
 
-/* 分類切換選單 */
+/* ---- 分頁按鈕 ---- */
 .tab-menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
+    gap: 10px;
 }
 
 .tab-btn {
-    background: #007BFF;
+    background: #D4AF37; /* 金色 */
     color: white;
     border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
+    padding: 12px 18px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
     border-radius: 5px;
+    transition: background 0.3s ease-in-out;
 }
 
 .tab-btn.active {
-    background: #0056b3;
+    background: #B8860B; /* 深金色 */
 }
 
 .tab-btn:hover {
-    background: #0056b3;
+    background: #B8860B;
 }
 
-/* 隱藏所有內容區塊，僅顯示被選擇的 */
-.tab-content {
+/* ---- 隱藏未選擇的分頁 ---- */
+.hidden {
     display: none;
 }
 
-.tab-content.active {
-    display: block;
-}
 
 /* 單篇文章區塊 */
 .publication-item {
@@ -525,11 +543,64 @@ html {
     text-decoration: underline;
 }
 
+/* 圖片相簿區塊 - 讓整體置中 */
+.gallery-container {
+    max-width: 1400px; /* 設定最大寬度 */
+    margin: 0 auto; /* 讓 gallery 整體置中 */
+    padding: 20px;
+    text-align: center;
+}
+
+/* 圖片排列 - 讓內容置中並確保間距 */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 確保圖片置中 */
+    gap: 20px; /* 設定圖片之間的間距 */
+    max-width: 1000px; /* 限制最大寬度 */
+    margin: 0 auto; /* 讓 .gallery 本身也置中 */
+}
+
+/* 單張圖片的區塊 */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    width: calc(33.33% - 20px); /* 桌機每行 3 張，扣除間距 */
+    max-width: 350px; /* 限制單張圖片最大寬度 */
+    text-align: center;
+}
+
+/* 圖片樣式 */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 滑鼠懸停時放大圖片 */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
 
 
 @media (max-width: 1024px) {
     .team-member {
         width: 80%; /* 讓卡片在平板上變窄 */
+    }
+    .gallery {
+        max-width: 800px;
+    }
+    .gallery-item {
+        width: calc(50% - 20px);
     }
 }
 
@@ -678,24 +749,24 @@ html {
     .contact-container {
             flex-direction: column; /* 讓 Office 和 Lab 變為上下排列 */
             gap: 30px;
-        }
+    }
 
     .course-container {
             padding: 10px;
-        }
+    }
 
     .course {
-            width: 95%; /* 讓課程區塊佔滿螢幕 */
+            width: 95%; /* 讓區塊適應小螢幕 */
             text-align: center;
-        }
-
+    }
+    
     .course h2 {
             font-size: 22px;
-        }
-
+    }
+    
     .course p {
             font-size: 14px;
-        }
+    }
 
     .research-container {
         padding: 10px;
@@ -724,12 +795,13 @@ html {
 
     .tab-menu {
         flex-direction: column;
+        gap: 5px;
     }
 
     .tab-btn {
-        margin: 5px 0;
         width: 90%;
     }
+
     
     .honor-container {
         padding: 10px;
@@ -783,6 +855,13 @@ html {
 
     .team-member-info {
         text-align: center;
+    }
+
+    .gallery {
+        max-width: 100%;
+    }
+    .gallery-item {
+        width: calc(100% - 20px);
     }
 }
 
