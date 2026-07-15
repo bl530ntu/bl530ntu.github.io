@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Courses | 機器學習與估計理論實驗室</title>
+    <!-- 自訂 Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  <!-- 連結 CSS -->
+</head>
+<body>
+
+    <header><!--這個網頁的標題以及導覽頁-->
+        <div class="logo-container">
+            <img src="graph/Lab.png" alt="Machine Learning and Estimation Theory Lab" class="logo">
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="honor.html">Honor</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li class="dropdown">
+                    <a href="courses.html">Courses</a>
+
+                    <!-- 第一層下拉選單：課程名稱 -->
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="courses.html">All Courses</a>
+                        </li>
+
+                        <!-- Machine Learning -->
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Machine Learning
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <!-- 第二層下拉選單：年份 -->
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="ML114.html">ML 114-1 / Fall 2025</a>
+                                    <a href="ML113.html">ML 113-1 / Fall 2024</a>
+                                    <a href="ML112.html">ML 112-1 / Fall 2023</a>
+                                    <a href="ML111.html">ML 111-1 / Fall 2022</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Data Science -->
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Data Science
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <!-- 第二層下拉選單：年份 -->
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="DS114.html">DS 114-1 / Fall 2025</a>
+                                    <a href="DS113.html">DS 113-2 / Spring 2025</a>
+                                    <a href="DS112.html">DS 112-2 / Spring 2024</a>
+                                    <a href="DS111.html">DS 111-2 / Spring 2023</a>
+                                    <a href="DS110.html">DS 110-2 / Spring 2022</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Kernel Methods & Machine Learning
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <!-- 第二層下拉選單：年份 -->
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="KML114.html">KMML 114-2 / Spring 2026</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Exams -->
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Exams
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="past_exams.html">Past Exams</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="tool.html">Tools</a></li>
+                <li><a href="https://docs.google.com/document/d/1Y9mfpXuHCNyyigVUIFT3edRn_ccUpboa0mFNspiyRJs/edit?tab=t.0">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 內容區 -->
+    <div class="course-container2">
+        <h1>MACHINE LEARNING</h1>
+        <h3>113-1 / Fall 2024</h3>
+        <p><strong>TA:</strong> 徐樂融 <span class="ta-en">(HSU, LE-RONG)</span>, 謝博揚 <span class="ta-en">(HSIEH, PO-YANG)</span>, 藍照淇 <span class="ta-en">(LAN,CHAO-CHI)</span></p>
+        <div class="course2">
+            <h2>WEEK 1 - 09/06</h2>
+            <h3><span class="topic-label">Topic</span> 1. Introduction;<br>
+                &emsp;&emsp;&emsp;&emsp;2. Regression; Bias and Variance Errors</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week1/ML%20syllabus%20(113-1).pdf" target="_blank">EE5184 Syllabus</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week1/W1_Introduction.pdf" target="_blank">Introduction</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week1/W1_Regression.pdf" target="_blank">Regression</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/playlist?list=PLREY_JttMD-xER9ZrQRZrFUdOpZkoOps7" target="_blank">Introduction, Regression</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="course2">
+            <h2>WEEK 2 - 09/13</h2>
+            <h3><span class="topic-label">Topic</span>Linear Model Classification: Probabilistic Generative Model, Logistic Regression</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week2/W2a_Bias_and_Variance.pdf" target="_blank">Bias and Variance</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week2/W2b_Classification%20(v2).pdf" target="_blank">Classification - Probability Generative Model</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week2/W2_Logistic%20Regression%20(v4).pdf" target="_blank">Logistic Regression</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/playlist?list=PLREY_JttMD-xEtOEDOXqh1NCvqQUJGmh5" target="_blank">Linear Model Classification</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="course2">
+            <h2>WEEK 3 - 09/20</h2>
+            <h3><span class="topic-label">Topic</span>1. Ensemble: Random forest, AdaBoost<br>
+                &emsp;&emsp;&emsp;&emsp;2. Neural Networks: Introduction, Gradient Decent and Back Propagation, Tips, Implementation (李宏毅教授教學影片)</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week3/W3_BP%20(v2).pdf" target="_blank">Backpropagation</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week3/W3_DL_introduction.pdf" target="_blank">Deep Learning</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week3/W3_DNN%20tip.pdf" target="_blank">Tips for Deep Learning</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week3/W3_Gradient%20Descent.pdf" target="_blank">Gradient Descent</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/playlist?list=PLREY_JttMD-ysgwAO0JalcAeB_vH2ub02" target="_blank">Ensemble</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtube.com/playlist?list=PLIKHU3mMrCpjS4HeIvNV9W6EbuDhQz3M3&si=PxEmHWj_ix-tmmzh" target="_blank">Deep Learning (last year)</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 4 - 09/27</h2>
+            <h3><span class="topic-label">Topic</span>1. Dimensionality Reduction: Principle Component Analysis<br>
+                &emsp;&emsp;&emsp;&emsp;2. Auto encoder (李宏毅教授教學影片)</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week4/W4_ensemble.pdf" target="_blank">Ensemble</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week4/W4_adaBoost.pdf" target="_blank">Adaboost</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week4/W4_autoencoder.pdf" target="_blank">Auto Encoder</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/playlist?list=PLREY_JttMD-w0cD-OZU6z_FF7yclmlg_S" target="_blank">Dimensionality Reduction</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/playlist?list=PLIKHU3mMrCpgoFiox4ofPRA1yLyaeurwA" target="_blank">Ensemble and Boosting (last year)</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 5 - 10/04</h2>
+            <h3><span class="topic-label">Topic</span>1. Neighbor Embedding<br>
+                &emsp;&emsp;&emsp;&emsp;2. Convolutional Neural Network (李宏毅教授教學影片)</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week5/W5_CNN.pdf" target="_blank">CNN</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week5/W5_PCA_v2.pdf" target="_blank">PCA</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week5/W5_PCA_SVD.pdf" target="_blank">PCA & SVD</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/playlist?list=PLREY_JttMD-zfNadQuWvzkakne1fm_7g2" target="_blank">Neighbor Embedding</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/watch?v=OP5HcXJg2Aw&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=9" target="_blank">CNN</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 6 - 10/11</h2>
+            <h3><span class="topic-label">Topic</span>1. Expectation Maximization and Gaussian Mixture Models<br>
+                &emsp;&emsp;&emsp;&emsp;2. Semi-Supervised Learning (李宏毅教授教學影片)</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week6/W6_GMM_EM.pdf" target="_blank">GMM & EM</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/playlist?list=PLREY_JttMD-zLDoPSBzaJZYVYubO9Hf1M" target="_blank">EM & GMM</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/playlist?list=PLLb0Q4dUC0k-tTCiA6IKL8BIkvs7eyuFl" target="_blank">Semi-supervised (2022)</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 7 - 10/18</h2>
+            <h3><span class="topic-label">Topic</span>1. Variational Auto-Encoder<br>
+                &emsp;&emsp;&emsp;&emsp;2. Recurrent Neural Network (李宏毅教授教學影片)</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week7/W7_VAE.pdf" target="_blank">VAE</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtube.com/playlist?list=PLREY_JttMD-w6jNtcgDIG8CapeoZZ_0NP&si=B88A8YH1hayaTm2k" target="_blank">VAE</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 8 - 10/25</h2>
+            <h3><span class="topic-label">Topic</span>1. Support Vector Machine: Margin and primal form<br>
+                &emsp;&emsp;&emsp;&emsp;2. Duality Theory of Constrained Optimization – Introduction</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week8/W8_TSNE.pdf" target="_blank">Neighbor Embedding</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/week8/W8_RNN.pdf" target="_blank">RNN</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/playlist?list=PLREY_JttMD-xS52vuRtoL7T-5596ETzip" target="_blank">SVM</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/watch?v=xCGidAeyS4M" target="_blank">RNN - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/watch?v=rTqmWlnwz_0" target="_blank">RNN - 2</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 9 - 11/01</h2>
+            <h3><span class="topic-label">Topic</span>Strong Duality Theorem</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtube.com/playlist?list=PLREY_JttMD-xLQqPNs7veJ0kp58CRESU5&si=KUOjJd9h3P5DnXJO" target="_blank">Strong Duality Theorem</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 10 - 11/08</h2>
+            <h3><span class="topic-label">Topic</span>Support Vector Machine: Kernel form and KKT conditions</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/svm/svm_L1_svm_intro.pdf" target="_blank">SVM Introduction</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/svm/svm_L2_svm_optimization.pdf" target="_blank">Optimization</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/svm/svm_L3_svm_kernel.pdf" target="_blank">Kernel</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/svm/svm_L4_duality_intro.pdf" target="_blank">Duality Introduction</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/svm/svm_L5_svm%20duality.pdf" target="_blank">Duality</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/VLWZKlqt7RQ" target="_blank">SVM</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/Kyna90pXXOk" target="_blank">SVM（僅黑板）</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 13 - 11/29</h2>
+            <h3><span class="topic-label">Topic</span>Reinforcement Learning: Markov Decision Process and Bellman optimality equations</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/rl/RL_notes.pdf" target="_blank">RL Notes</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/rl/regret_bound.pdf" target="_blank">Regret Bound</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/IrjWDGoGLOE" target="_blank">Reinforcement Learning - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/H3pcuMg6V3Y" target="_blank">Reinforcement Learning - 1 (僅黑版)</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="course2">
+            <h2>WEEK 14 - 12/06</h2>
+            <h3><span class="topic-label">Topic</span>Reinforcement Learning: Value and Policy Iterations; Multi-arm bandit problem</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/w2IA3oGNyAY" target="_blank">Reinforcement Learning - 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/0ZKRP3NXRxU?si=-kq_BvKFo9Kh16o_" target="_blank">Reinforcement Learning - 2 (僅黑版)</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 15 - 12/13</h2>
+            <h3><span class="topic-label">Topic</span>Probably Approximately Correct Learning</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/slides/pac/PAC%20introduction.pdf" target="_blank">PAC Introduction</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/Qnf9qg3nWfg?si=8QL5t_9q_R6mRLgQ" target="_blank">PAC</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/fnFdahkhqPk?si=sVkEV_DMshZv9WFH" target="_blank">PAC (僅黑版)</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        </br>
+        <h1>EXERCISE</h1>
+        
+        <div class="course2">
+            <h2>HOMEWORK</h2>
+            <table class="week-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="name">
+                            <p><b>Math Problem 1</b></p>
+                            <p><b>Math Problem 2</b></p>
+                            <p><b>Math Problem 3</b></p>
+                            <p><b>Math Problem 4</b></p>
+                            <p><b>Math Problem 5</b></p>
+                        </td>
+                        <td class="question">
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://ntueemlta2024.github.io/homeworks/hw1/ml-2024fall-hw1-math.pdf" target="_blank">Regression</a>
+                            </p>
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://ntueemlta2024.github.io/homeworks/hw2/ml-2024fall-hw2-math.pdf" target="_blank">CNN</a>
+                            </p>
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://ntueemlta2024.github.io/homeworks/hw3/ml-2024fall-hw3-math.pdf" target="_blank">Embedding</a>
+                            </p>
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://ntueemlta2024.github.io/homeworks/hw4/ml-2024fall-hw4-math.pdf" target="_blank">RNN</a>
+                            </p>
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://ntueemlta2024.github.io/homeworks/hw5/ml-2024fall-hw5-math.pdf" target="_blank">SVM</a>
+                            </p>
+                        </td>
+                        <td class="answer">
+                            <p><span class="comment">Not Available</span></p>
+                            <p><span class="comment">Not Available</span></p>
+                            <p><span class="comment">Not Available</span></p>
+                            <p><span class="comment">Not Available</span></p>
+                            <p><span class="comment">Not Available</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>PROGRAM</h2>
+            <table class="week-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Slide / Video</th>
+                        <th>Code</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="name">
+                            <p><b>Program 1</b></p>
+                            <p><b>Program 2</b></p>
+                            <p><b>Program 3</b></p>
+                            <p><b>Program 4</b></p>
+                            <p><b>Program 5</b></p>
+                        </td>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/homeworks/hw1/ml-2024fall-hw1-slide.pdf" target="_blank">PM2.5 Prediction</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/homeworks/hw2/ml-2024fall-hw2-slide.pdf" target="_blank">Face Expression Prediction</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/homeworks/hw3/ml-2024fall-hw3-slide.pdf" target="_blank">AutoEncoder</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://ntueemlta2024.github.io/homeworks/hw4/ml-2024fall-hw4-slide.pdf" target="_blank">Prediction of Postpartum Depression</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://docs.google.com/presentation/d/12_6NzxFjnynvnWzjyHmemFHTeFdt7uL2/edit?rtpof=true&sd=true" target="_blank">Knight and Pawn</a></p>
+                        </td>
+                        <td class="code">
+                            <p><span class="tag folder-tag">FILE</span> <a href="https://docs.google.com/document/d/1JSsoH_MdgS_Uwpdg6IXky59gtuM9MPss20tlkIOUUWE/edit?usp=share_link" target="_blank">Program1 Code</a></p>
+                            <p><span class="tag folder-tag">FILE</span> <a href="https://docs.google.com/document/d/17cO6DdplgfQGMQ053rSkFY3c8H-eENnhSK4X2vkq9P4/edit?usp=share_link" target="_blank">Program2 Code</a></p>
+                            <p><span class="tag folder-tag">FILE</span> <a href="https://docs.google.com/document/d/1s9Cc8UN1GUS1q-0ah7TaWQixJ2T3a5wECLxJwzYAkuA/edit?usp=share_link" target="_blank">Program3 Code</a></p>
+                            <p><span class="tag folder-tag">FILE</span> <a href="https://docs.google.com/document/d/1PWrSUGvEq5tFnGUCq2Zl1yutEdlo7_T4rVq0sfnjPAA/edit?usp=share_link" target="_blank">Program4 Code</a></p>
+                            <p><span class="tag folder-tag">FILE</span> <a href="https://docs.google.com/document/d/1rILxDG9ly-XrXjW12OBpVc6J52xM0EMG9rgyuQRnVI0/edit?usp=share_link" target="_blank">Program5 Code</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            
+    </div>
+
+    <footer>
+        <p>&copy; 2026 機器學習與估計理論實驗室</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Courses | 機器學習與估計理論實驗室</title>
+    <!-- 自訂 Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  <!-- 連結 CSS -->
+</head>
+<body>
+
+    <header><!--這個網頁的標題以及導覽頁-->
+        <div class="logo-container">
+            <img src="graph/Lab.png" alt="Machine Learning and Estimation Theory Lab" class="logo">
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="honor.html">Honor</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li class="dropdown">
+                    <a href="courses.html">Courses</a>
+
+                    <!-- 第一層下拉選單：課程名稱 -->
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="courses.html">All Courses</a>
+                        </li>
+
+                        <!-- Machine Learning -->
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Machine Learning
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <!-- 第二層下拉選單：年份 -->
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="ML114.html">ML 114-1 / Fall 2025</a>
+                                    <a href="ML113.html">ML 113-1 / Fall 2024</a>
+                                    <a href="ML112.html">ML 112-1 / Fall 2023</a>
+                                    <a href="ML111.html">ML 111-1 / Fall 2022</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Data Science -->
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Data Science
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <!-- 第二層下拉選單：年份 -->
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="DS114.html">DS 114-1 / Fall 2025</a>
+                                    <a href="DS113.html">DS 113-2 / Spring 2025</a>
+                                    <a href="DS112.html">DS 112-2 / Spring 2024</a>
+                                    <a href="DS111.html">DS 111-2 / Spring 2023</a>
+                                    <a href="DS110.html">DS 110-2 / Spring 2022</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Kernel Methods & Machine Learning
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <!-- 第二層下拉選單：年份 -->
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="KML114.html">KMML 114-2 / Spring 2026</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Exams -->
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Exams
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="past_exams.html">Past Exams</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="tool.html">Tools</a></li>
+                <li><a href="https://docs.google.com/document/d/1Y9mfpXuHCNyyigVUIFT3edRn_ccUpboa0mFNspiyRJs/edit?tab=t.0">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 內容區 -->
+    <div class="course-container2">
+        <h1>KERNEL METHODS AND MACHINE LEARNING</h1>
+        <h3>114-2 / Spring 2026</h3>
+        <p><strong>TA:</strong> 江履方 <span class="ta-en">(CHIANG, ALEXANDER LUFANG)</span>, 林育正 <span class="ta-en">(LIN, YU-CHENG)</span></p>
+
+        <div class="course2">
+            <h2>WEEK 1 - 02/24</h2>
+            <h3><span class="topic-label">Topic</span> Introduction</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1c8QftWyPGj0HVqoXBzVleO5UKbOiPb2g/view?usp=share_link" target="_blank">COMME5053 Syllabus</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/12rYb9rYVTWrGX3vjz2TboDIPaAYcdNzt/view?usp=share_link" target="_blank">Introduction</a></p>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="course2">
+            <h2>WEEK 2 - 03/03</h2>
+            <h3><span class="topic-label">Topic</span> Mercer kernel, Feature map, Gram matrices</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1CKybWnHG9mK9F19YRG00W2vRYxRReKQx/view?usp=share_link" target="_blank">KRHS</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1JDe31pgcKoZm0r11MJ5Vh2zGsrslAWp0/view?usp=sharing" target="_blank">Linear algebra</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/7WM6JKs1caY?si=wARTSTqsPwP2R_Bl" target="_blank">0303</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="course2">
+            <h2>WEEK 3 - 03/10</h2>
+            <h3><span class="topic-label">Topic</span> Hilbert space, Riesz representation theory</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/4MyYR5B4dpI?si=Vu6y_q3Fo0TLmFrL" target="_blank">0310</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/KyHm8XweqEQ?si=WGaI7UuZSIzZr6Ck" target="_blank">0310（僅黑板）</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 4 - 03/17</h2>
+            <h3><span class="topic-label">Topic</span> Moore-Aronszajn Theorem</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/wZ22FpSYvOU?si=Re88IR_EcS_d0aWI" target="_blank">0317</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/Mwj0bbZ1RME?si=-13uNcj-wpy1XHWg" target="_blank">0317（僅黑板）</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 5 - 03/24</h2>
+            <h3><span class="topic-label">Topic</span> Regularized risk minimization, representer theorem, kernel ridge regression</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/KDMrQfN-0WE?si=SRHKtEEBe_p9dIDD" target="_blank">0324</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/AH8VkC5Ruf0?si=ymBU9Vfmp68hVCIn" target="_blank">0324（僅黑板）</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 6 - 03/31</h2>
+            <h3><span class="topic-label">Topic</span> Translation invariant kernel, random Fourier features</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/E7vDz20kqY0?si=9aGicZBCV5t9dAmq" target="_blank">0331</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/DMlDWbg3dCY?si=H2DknrCPEjKhr3Vk" target="_blank">0331（僅黑板）</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 7 - 04/07</h2>
+            <h3><span class="topic-label">Topic</span> Kernel PCA, Nystrom approximation</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/B1Po9RGbhX4?si=_1kB8JmlITNkw6kR" target="_blank">0407</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/utGFhQn8OWs?si=DJ6n7trC--kToGW7" target="_blank">0407（僅黑板）</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 8 - 04/14</h2>
+            <h3><span class="topic-label">Topic</span> Gaussian process and Kriging</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1rfHcnAIofrBxiJAE3UuYVPBjQHy59T-z/view?usp=share_link" target="_blank">Representation theorem and KRR</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/ENpmWTCmKqY?si=CSDWs8gNH3Fjl3UV" target="_blank">0414</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/b8uxEZuWQXk?si=NjeFLVJPuhaLJlQ3" target="_blank">0414（僅黑板）</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/pRyNUKiuqpA?si=C_cx1cyDv2vaHO5F" target="_blank">0415</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/qqYxyEWx5cE?si=OCkChR_oUTOqRBSl" target="_blank">0415（僅黑板）</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 9 - 04/21</h2>
+            <h3><span class="topic-label">Topic</span>  Gaussian process and Kriging</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1dwXJERic0undiLhVp-1R5wsG_Z5zlOSJ/view?usp=share_link" target="_blank">Translation invariant kernel and random Fourier features</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a   href="https://youtu.be/MFj3AGswq2M?si=f6EAayB7InobXtPg" target="_blank">0421（僅黑板）</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/5lr-7Y19zZI?si=ZWwNfSJA0-VNvTA1" target="_blank">0421</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 10 - 04/28（補）</h2>
+            <h3><span class="topic-label">Topic</span> Inner space completion, RKHS</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/3BYg8XeLTeU?si=aWM1utUNBfW2S-P6" target="_blank">0428</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/kl-QxEMvOVY?si=wmgkeCbvOVyv7Of0" target="_blank">0428（僅黑板）</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 11 - 05/05（補）</h2>
+            <h3><span class="topic-label">Topic</span> Selected topics</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/J2GnwDrZnp0?si=YA1s5SSOahH1GQoA" target="_blank">0505</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/AhOHBx2RSNg?si=dZZMnqob_Q4yRPkG" target="_blank">0505（僅黑板）</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 12 - 05/12</h2>
+            <h3><span class="topic-label">Topic</span> Bandit problem</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1zrcrjgBFm6k_NtXcIc45BP7Qj_SQUlsR/view?usp=sharing" target="_blank">Kernel PCA and Nystrom approximation</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1dfb21wF5D3ek0Y4HPzibsr8jjQa_sliK/view?usp=sharing" target="_blank">Gaussian Process</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1cBGrqFZCiFAXvUohf_pIuhriAVIpK1TP/view?usp=share_link" target="_blank">Matern kernel</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/rrynqbKzGAg?si=2s2mkVkc-6azo0-q" target="_blank">0512</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/AhOHBx2RSNg?si=R4zqC_ChTW2NtCpw" target="_blank">0512（僅黑板）</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 13 - 05/19</h2>
+            <h3><span class="topic-label">Topic</span> Self normalizing bound, Kernel UCB</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/Iv2-idI_6o8?si=Zd4DI-UxI_BIY1Nv" target="_blank">0519</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/j9aQDlblcUQ?si=6APlDZIQaE-2oxXw" target="_blank">0519（僅黑板）</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 17</h2>
+            <h3><span class="topic-label">Topic</span> Self normalizing bound, Kernel UCB</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1AWSq0zxkt7_a_ZlJ7z254hthoxVQ1v4J/view?usp=share_link" target="_blank">self normalizing bound</a></p>
+                        </td>
+                        <td class="video">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            
+    </div>
+
+    <footer>
+        <p>&copy; 2026 機器學習與估計理論實驗室</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

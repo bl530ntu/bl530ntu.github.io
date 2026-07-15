@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Courses | 機器學習與估計理論實驗室</title>
+    <!-- 自訂 Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  <!-- 連結 CSS -->
+</head>
+<body>
+
+    <header><!--這個網頁的標題以及導覽頁-->
+        <div class="logo-container">
+            <img src="graph/Lab.png" alt="Machine Learning and Estimation Theory Lab" class="logo">
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="honor.html">Honor</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li class="dropdown">
+                    <a href="courses.html">Courses</a>
+
+                    <!-- 第一層下拉選單：課程名稱 -->
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="courses.html">All Courses</a>
+                        </li>
+
+                        <!-- Machine Learning -->
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Machine Learning
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <!-- 第二層下拉選單：年份 -->
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="ML114.html">ML 114-1 / Fall 2025</a>
+                                    <a href="ML113.html">ML 113-1 / Fall 2024</a>
+                                    <a href="ML112.html">ML 112-1 / Fall 2023</a>
+                                    <a href="ML111.html">ML 111-1 / Fall 2022</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Data Science -->
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Data Science
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <!-- 第二層下拉選單：年份 -->
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="DS114.html">DS 114-1 / Fall 2025</a>
+                                    <a href="DS113.html">DS 113-2 / Spring 2025</a>
+                                    <a href="DS112.html">DS 112-2 / Spring 2024</a>
+                                    <a href="DS111.html">DS 111-2 / Spring 2023</a>
+                                    <a href="DS110.html">DS 110-2 / Spring 2022</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Kernel Methods & Machine Learning
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <!-- 第二層下拉選單：年份 -->
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="KML114.html">KMML 114-2 / Spring 2026</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Exams -->
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Exams
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="past_exams.html">Past Exams</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="tool.html">Tools</a></li>
+                <li><a href="https://docs.google.com/document/d/1Y9mfpXuHCNyyigVUIFT3edRn_ccUpboa0mFNspiyRJs/edit?tab=t.0">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 內容區 -->
+    <div class="course-container2">
+        <h1>MACHINE LEARNING</h1>
+        <h3>111-1 / Fall 2022</h3>
+        <p><strong>TA:</strong> 伏宇寬 <span class="ta-en">(FU, YU-KUAN)</span>, 林仲偉 <span class="ta-en">(LIN, ZHONG-WEI)</span>, 賴彥儒 <span class="ta-en">(LAI, YEN-RU)</span></p>
+        <p> 楊智凱 <span class="ta-en">(YANG, CHIH-KAI)</span></p>
+
+        <div class="course2">
+            <h2>WEEK 2 - 09/16</h2>
+            <h3><span class="topic-label">Topic</span> Introduction; Regression; Bias and Variance Errors</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1zJl64vZYZQnSlm7gmhfyRYXaHe9K6aqS/view?usp=share_link" target="_blank">EE5184 Syllabus</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1pPpjPbBFgiFXmZvAtnR7CfsLtJ8yhB-n/view?usp=share_link" target="_blank">Introduction</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1PmVYpGPVQuj4Kv8_CtOwY206wwFtLdhi/view?usp=share_link" target="_blank">Regression</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/eVICN-BYv7A?si=XQIpz3vjyjAiOOkW" target="_blank">What is ML</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/DuzkamQWkXQ?si=75hPjdM-ezqq6vTw" target="_blank">Introduction - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/caNHqU7PP9A?si=eU7xr7UpP4stJIXe" target="_blank">Introduction - 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/LcJhtusnUac?si=6njiiQBtSFsrMCzG" target="_blank">Regression - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/zRxTHBMh_84?si=n0gzbIiHbrmpvpAk" target="_blank">Regression - 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/69egwsSlIeo?si=mfrm96QfkxX3Chum" target="_blank">Regression - 3</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/QmED6ARCUOI?si=ntoAHIjdkldUFkDA" target="_blank">Regression - 4</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="course2">
+            <h2>WEEK 3 - 09/23</h2>
+            <h3><span class="topic-label">Topic</span>Linear Model Classification: Probabilistic Generative Model, Logistic Regression</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1We1S-rGXlGt1mj9BtFXfMqbYB9jpFs-N/view?usp=sharing" target="_blank">Bias and Variance</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1DKURxYWPyF9k--3h_TfjMh0CK9aYOxA8/view?usp=share_link" target="_blank">Classification</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1Gng4hefhFga16X8NnXGYoAc3vdOPKD1L/view?usp=share_link" target="_blank">Logistic Regression</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/iGuW5AqSaIM?si=w6Q2Wj-8p8MYYiDx" target="_blank">Recap</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/mSkTLW6nE7s?si=FGkjVkVxkGZDxAzC" target="_blank">Bias and Variance - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/N4iYkC_SqW4" target="_blank">Bias and Variance - 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/9PyoHFYkoGY?si=2hGEyA0MuBy_-wj1" target="_blank">k fold corss validation</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/tbyBpYdLBLM?si=tSHuYeqTxCfREYYk" target="_blank">3 fold corss validation example</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/-hjO4cSfHq0?si=Iq_kpuGRCXk2GzYV" target="_blank">Classification Prob Gen Model 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/t81QlY7BZ9Y?si=Xdq9XjrbxCvAjY97" target="_blank">Classification Prob Gen Model 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/SJL0gBw8jhc?si=hKSvNVA89viFxNmU" target="_blank">Generative model prob is sigmoid</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="course2">
+            <h2>WEEK 4 - 09/30</h2>
+            <h3><span class="topic-label">Topic</span>Neural Networks: Introduction, Gradient Decent and Back Propagation, Tips, Implementation</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1jm-a4Aghn7JXUCtd0JaDk3ZY6lq0pH7Q/view?usp=share_link" target="_blank">Backpropagation</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1ejqeD8ldbprNHFbFS6o3Vi4q_NTMVGDI/view?usp=share_link" target="_blank">Deep Learning</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1XlinJR9fqQMtJkLN7BCPo1HVFP6qXhLa/view?usp=share_link" target="_blank">Tips for Deep Learning</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1fP5mc1cjWOyY8tSRuARE-z3YbL0-zOyX/view?usp=share_link" target="_blank">Gradient Descent</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/affNWnuSzjI?si=tKoIv3nKOaqFq3_z" target="_blank">Logistic Regression - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/FhBCUhpyGrg?si=qUEnQw1W2n5f9ww4" target="_blank">Logistic Regression - 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/FsDr6BOyq8M?si=tM50OYf7D4TmTj1x" target="_blank">Logistic Regression - 3</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/H1nhweNs2KE" target="_blank">Appendix and Deep Learning</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/HaWRJSCqWk8?si=EEZ5kktMGJ2h-EAl" target="_blank">Deep Learning - 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/z_Gh4xsI0Hk?si=L4XkLqsseTf4ew6m" target="_blank">Gradient Descent - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/s5jubDYYmvA?si=noeHEu7dgcfvbp29" target="_blank">Gradient Descent - 2</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 5 - 10/07</h2>
+            <h3><span class="topic-label">Topic</span>1. Convolutional Neural Network (CNN) (看李宏毅教授教學影片)<br>
+                &emsp;&emsp;&emsp;&emsp;2. Dimensionality Reduction: Principle Component Analysis</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1QRHBldICZ4M0Vt559b-mIe6N-40ozYkw/view?usp=share_link" target="_blank">CNN</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/10fcBp_IXR4vBxY6GBnaV3RqTIsIWirQM/view?usp=share_link" target="_blank">PCA</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1th8Aqg5VBhZw-TE9wVnVwlcm9ma32cFb/view?usp=share_link" target="_blank">PCA SVD</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/xFSSSq8FAZg?si=zH-Fj1CaaiLsgeIh" target="_blank">Principle Component Analysis - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/JWlSWmMKFxI?si=mKiGzPfO47lDfx9b" target="_blank">Principle Component Analysis - 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/vIYGlEazwVA?si=HyzLzB6yW-dwWY6E" target="_blank">Diagonalizability and Symmetric Matrix</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/Xc26ukBCSJs?si=evpQ9upTHW7ApeDc" target="_blank">PCA algorithm step by step</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/54w8ZfL5StY?si=8tahLy-DS7BKmBZ7" target="_blank">PCA QA</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/efnmz2nm_p4?si=0SRxnSqYfkjHux04" target="_blank">Properties of PCA - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/rFVyImVEYTw" target="_blank">Properties of PCA - 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/WCLeN_W-Hmw?si=jpDohYuiuxb6MRE5" target="_blank">Eckart-Young-Mirsky Theorem and Low Rank Approximation update</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 6 - 10/14</h2>
+            <h3><span class="topic-label">Topic</span>Auto encoder</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1wEdFzFjKYrdgziHwbdW2HX_JdrR2cheF/view?usp=share_link" target="_blank">Unsupervised Learning: Deep Auto-encoder</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1jGmG0QnLmI9uH0ZRs13HbLSLpfB0TTR8/view?usp=share_link" target="_blank">Unsupervised Learning: Neighbor Embedding</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/46MOvIxS_XY?si=GxNTg4ppFNAvjS8j" target="_blank">PCA in affine set</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/VgiqxBEKCsc?si=cT3qmpRrhEA7KAlq" target="_blank">Proof of Eckart-Young-Mirsky Theorem</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/HbG8vusJQUQ?si=QpYfArmV1hMYaraQ" target="_blank">Explain Proof of Eckart-Young-Mirsky Theorem</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/58dx9dKShtE?si=puYRUuRXgrL7FHpn" target="_blank">PCA as Optimal Solution</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/mQ-WdEgktl0?si=MOVYW7C_OfiCyTFG" target="_blank">PCA and Autoencoder</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/s4DtyxIKgP4?si=SWb5r5C_na1Utg0L" target="_blank">LLE and Laplacian Eigenmap</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 7 - 10/21</h2>
+            <h3><span class="topic-label">Topic</span>Neighbor Embedding</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1yCrzU1b2zaqQb25AA9xK40Yqo5wj98rw/view?usp=share_link" target="_blank">Final Project</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/gryK5PTNScU?si=exY6Hb77v3SbQFzd" target="_blank">Final Project Announcement</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 8 - 10/28</h2>
+            <h3><span class="topic-label">Topic</span>1. Ensemble: Random forest, AdaBoost<br>
+                &emsp;&emsp;&emsp;&emsp;2. Recurrent Neural Network (看李宏毅教授教學影片)</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/19NImoFQRmlML_n0fehczZBU6SPGPg6dn/view?usp=share_link" target="_blank">AdaBoost</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1FgYGxyM8znWGiaiZ8cOkv58dFkjY8flm/view?usp=share_link" target="_blank">Ensemble</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1rsdqG62d8MtJxZin7oVfPo_j0xL-xTvg/view?usp=share_link" target="_blank">Recurrent Neural
+                                Network</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/jQi6QWI9tu8?si=eR5Yx-H9WIcrVIxo" target="_blank">Decision Tree</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/xd9sbz9D7NE" target="_blank">Random Forest and boosting</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/Wjs682ZXeT4?si=Mb7cV_ss4hCTZMGG"  target="_blank">Adaboost</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/W4dyoYVnRf0?si=eHqRAx3QmfZdCuI-"  target="_blank">Adaboost Example</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/NidrGHT-TzQ?si=-EAnV2sMzs5Tt0wl" target="_blank">Adaboost Coefficient</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/-KanQJRTT4w?si=XcMylrFHwwTKPSLS"  target="_blank">Gradient Boost</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 9 - 11/4</h2>
+            <h3><span class="topic-label">Topic</span>Expectation Maximization and Gaussian Mixture Models</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1hspXEmHfHn7rbIleBP1zaWWMXzZOJTp0/view?usp=share_link" target="_blank">Expectation Maximization and Gaussian Mixture Models</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/k2blYhWoKMs?si=hGWege5tRlk0Xlvb" target="_blank">Maximum-Likelihood Estimation for Single Gaussian Model</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/nQsaGka6pC4?si=XvHYqM3CjdfvnkmP" target="_blank">Maximum-Likelihood Estimation for Gaussian Mixture Model</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/YYjZMyRe4Wk?si=oUOgOIbSD021dUrB" target="_blank">Expectation Maximation Theorem</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/sYHSA6bs83c?si=YytnAUGyxz50duvo"  target="_blank">Why Cross Entropy Difference Equals to 0</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/EcDjdYCba9w?si=v2LgIQ3qLExhToht"  target="_blank">QA for EM Algorithm</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/hUChptgdt9w?si=lYvuSwlUON8VciJD" target="_blank">EM Algorithm for GMM Expectation-Step</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/1NCypfiOaYs?si=oDIYpv_oEzZZpWLZ"  target="_blank">EM Algorithm for GMM Maximization-Step</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://www.youtube.com/playlist?list=PLxk9aIYXCa9eqrURcrf2g9fwunbuR_iGj"  target="_blank">Appendix: EM Algorithm introduction</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 10 - 11/11</h2>
+            <h3><span class="topic-label">Topic</span>Semi-Supervised Learning</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1K042rUglsGVIEAaSfZi6L9KpnOJjzdt9/view?usp=share_link" target="_blank">Semi-supervised Learning</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/_VXStsPUK1A?si=2UkCD8oFUICZTr2v" target="_blank">Semi-supervised Learning</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/JOIVIAt5-0U?si=AwDQfR8-PO4l8hqW" target="_blank">Semi-supervised Generative Model</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/thH1k4HbxJw?si=zu7boFyoObm57XBS" target="_blank">Semi-supervised Learning Low Density Seperation</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/Yp-0e7YhVdk?si=5Ds2M-uJxfbh0Pbl" target="_blank">Entropy-based and Graph-based approach</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/regZWAWp7mg?si=Su9Id35E3PIXn_Ff" target="_blank">Graph-based approach Elaborate</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 11 - 11/18</h2>
+            <h3><span class="topic-label">Topic</span>Variational Auto-Encoder</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1iIMJHooWZbV9rmBD_HKewknDrucwHiLZ/view?usp=share_link" target="_blank">Variational Auto Encoder</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/TQSPDy8Csfc?si=C4vwFGXkxZo3CPyQ" target="_blank">Variational Auto Encoder</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/jg5upwUDmPw?si=dlsj7bkThqcv3cmL" target="_blank">ELBO of VAE</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/G5ZbUTCps2Y?si=b8TmXoei3IABiXPU" target="_blank">VAE and Gaussian Mixture Model - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/461AayhCMOM?si=IcwZDwh95GXZYtvY" target="_blank">VAE and Gaussian Mixture Model - 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/cgC1SWc00xs?si=Gp9iYprcw4bFgouC" target="_blank">VAE and Gaussian Mixture Model - 3</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 12 - 11/25</h2>
+            <h3><span class="topic-label">Topic</span>1. Support Vector Machine – Margin and primal form<br>
+                &emsp;&emsp;&emsp;&emsp;2. Duality Theory of Constrained Optimization - Introduction</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1v8vf0Y9w-WXYZZP1WjvhIGgD2ba5-28A/view?usp=share_link" target="_blank">Support Vector Machine Introduction</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1Exvw1odCyw_SVJePhlyvEawnZ3DiOXnO/view?usp=share_link" target="_blank">Support Vector Machine Optimization</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/ZhkpGQdbDXI?si=Z-SUKD6DLJxrg38k" target="_blank">Linear SVM</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/n9oeVFnhPQk?si=aADIPMQYQcWDNSTn" target="_blank">Soft Margin SVM</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/WOO1KA7sz4Q?si=4uoNIYrmUIX4qnum" target="_blank">Optimization of Soft Margin SVM</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/bv5rmyKAIEU?si=RNGtm_uTeC2w_RJ5" target="_blank">Properties of Convex Function</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/xT3HsZozK_o?si=xBtx0vk3YVrStJ0l" target="_blank">Representer Theorem of SVM</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/vx0_6vZbKCg?si=PeEAtVWttyIdEoaz" target="_blank">Primal and Dual Problem of SVM</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/YstBp6FJZtQ?si=uAKVB5jkZUU8hRJ9" target="_blank">Grometric Repesentation of Primal and Dual Problem</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 13 - 12/02</h2>
+            <h3><span class="topic-label">Topic</span>1. Strong Duality Theorem<br>
+                &emsp;&emsp;&emsp;&emsp;2. Support Vector Machine: Kernel form and KKT conditions </h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 14 - 12/09</h2>
+            <h3><span class="topic-label">Topic</span>Probably Approximately Correct Learning</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1xSP6n-Q7MNzszimqvxt7bsD3cv4syvuP/view?usp=share_link" target="_blank">Support Vector Machine Kernel Methods</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1BJhowoQTzk89QBceJrai9tWtCXzQ-sAk/view?usp=share_link" target="_blank">Lagrangian Duality</a></p>
+                            <p><span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/1vp9slISwMQWJqfzARIWFIXDOPxOl3xWP/view?usp=share_link" target="_blank">Lagrangian Duality</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">
+                                期末提醒</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/16akjc1MSkI?si=Xk-nr1epsxnFlF2H" target="_blank">SVM and its Dual Problem and KKT conditions - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/9WWHH5Q2Bao?si=_2SYtAQTiPhUdvqx" target="_blank">SVM and its Dual Problem and KKT conditions - 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/_usbciECI_A?si=1Bw_3RMeSjn_neNv" target="_blank">SVM and its Dual Problem - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/ASEGHsMEj-s?si=E89cOcVXW8iuO8S1" target="_blank">Lagrange Duality - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/lIc0upkWRF4?si=QBrskgyoL6RUCjY5" target="_blank">Lagrange Duality - 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/kbU4O3Pdw4s?si=5esuJACeah8TCguV" target="_blank">Lagrange Duality - 3</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/EkbLZcPvNOQ?si=Foez7GIz9cSvhx3G" target="_blank">Lagrange Duality - 4</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/JPRZ-iJVpLc?si=TyHkrzZp9OMxScyw" target="_blank">Lagrange Duality - 5</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="course2">
+            <h2>WEEK 15 - 12/16</h2>
+            <h3><span class="topic-label">Topic</span>Privacy Preserving Machine Learning</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/Up5pI95wTMU?si=08G_raOcXlM7FTdQ" target="_blank">Morris Chang Lecture - 1</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/akOakHcPOq0?si=SKLvj1Lgt45ADgvm" target="_blank">Morris Chang Lecture - 2</a></p>
+                            <p><span class="tag video-tag">VIDEO</span> <a href="https://youtu.be/fLJRWNOOEbQ?si=9lMXf6jwmEQJL6Qf" target="_blank">Morris Chang Lecture - 3</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        </br>
+        <h1>EXERCISE</h1>
+        
+        <div class="course2">
+            <h2>HOMEWORK</h2>
+            <table class="week-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="name">
+                            <p><b>Math Problem 1</b></p>
+                            <p><b>Math Problem 2</b></p>
+                            <p><b>Math Problem 3</b></p>
+                            <p><b>Math Problem 4</b></p>
+                            <p><b>Math Problem 5</b></p>
+                        </td>
+                        <td class="question">
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://hackmd.io/@lH2AB7kCSAS3NPw2FffsGg/Sk1n8xPWo?fbclid=IwAR0LiCps2fhIZFJT-gYP8kr7KlvLaRvS9-ftLIaPQY5DVgye1AuHM-RW3Yg" target="_blank">Mathematic Background, ...</a>
+                            </p>
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://hackmd.io/@lH2AB7kCSAS3NPw2FffsGg/r1otQp7Gi?fbclid=IwAR0cs5CajVy_zhDmHEDgze2V1_Jlxp95N45BF6hg1l6CgG-6IViYGAIGReE" target="_blank">Convergence of K-means Clustering</a>
+                            </p>
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://hackmd.io/@lH2AB7kCSAS3NPw2FffsGg/Hy3kRxTMs?fbclid=IwAR0cc-uqpmQm9_Jel9plCjj3QBDtNYEIikJGtgyvCFczcue_KCeEsXUQIHc" target="_blank">Convolution, Batch Normalization, ...</a>
+                            </p>
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://hackmd.io/@lH2AB7kCSAS3NPw2FffsGg/H1ucYOpNo" target="_blank">LSTM Cell, Multiclass AdaBoost</a>
+                            </p>
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/1b2hq_n4OufZbPU9uhV7vzVyYyMVDLcJ-/view?usp=share_link" target="_blank">Kernel, SVM, SVR</a>
+                            </p>
+                        </td>
+                        <td class="answer">
+                            <p><span class="comment">Not Available</span></p>
+                            <p><span class="comment">Not Available</span></p>
+                            <p><span class="comment">Not Available</span></p>
+                            <p><span class="comment">Not Available</span></p>
+                            <p><span class="comment">Not Available</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>PROGRAM</h2>
+            <table class="week-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Slide / Video</th>
+                        <th>Code</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="name">
+                            <p><b>Program 1</b></p>
+                            <p><b>Program 2</b></p>
+                            <p><b>Program 3</b></p>
+                            <p><b>Program 4</b></p>
+                            <p><b>Program 5</b></p>
+                        </td>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://docs.google.com/presentation/d/1SEG9V6lsY0owG_AqIKMV07W85wlR7PSh/edit?slide=id.p1#slide=id.p1" target="_blank">PM2.5 Prediction</a> &emsp;<span class="tag video-tag">Video</span> <a href="https://youtu.be/QzoSZ6XWqZQ" target="_blank">P1 video</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://docs.google.com/presentation/d/1sV66DbhwFQRQDe_r5e611dGVyP84qosl/edit?usp=sharing&ouid=101016267389786846355&rtpof=true&sd=true" target="_blank">Face Expression Prediction</a> &emsp;<span class="tag video-tag">Video</span> <a href="https://youtu.be/SFWt6njTmeI" target="_blank">P2 video</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://docs.google.com/presentation/d/1DnKRs9mokOh6AXyTiMpHNxdtm89jun52/edit?usp=sharing&ouid=105029010792272788496&rtpof=true&sd=true" target="_blank">Embedding</a> &emsp;<span class="tag video-tag">Video</span> <a href="https://youtu.be/lLeQhyVIpoc" target="_blank">P3 video</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://docs.google.com/presentation/d/1unG_d2QEFQ0sryWYN0Qr9XOLS14KHV1M5wS3nWuKCB0/edit?usp=sharing" target="_blank">Text Sentiment Classification</a> &emsp;<span class="tag video-tag">Video</span> <a href="https://youtu.be/POHfbfn_aGc" target="_blank">P4 video</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://docs.google.com/presentation/d/1Aj-WD4aP9vKJ7yZ0rrzP85sNZKrjxsplAWVVDpSlm58/edit?usp=sharing" target="_blank">Income 50K prediction</a></p>
+                        </td>
+                        <td class="code">
+                            <p><span class="tag folder-tag">FILE</span> <a href="https://docs.google.com/document/d/1ieWEriOo2uQx_dd0HB4lhSN3qqc9uIZwNCqJw1o3GKc/edit?usp=share_link" target="_blank">Program1 Code</a></p>
+                            <p><span class="tag folder-tag">FILE</span> <a href="https://docs.google.com/document/d/1O-q3pyFQsuxsWF84cYy3qJiHuS-7XC381kAo6I0kjL4/edit?usp=share_link" target="_blank">Program2 Code</a></p>
+                            <p><span class="tag folder-tag">FILE</span> <a href="https://docs.google.com/document/d/1903zkEZqXLeFADX4l7p2U5N_Gnm0kcud8RcTqQzDBvg/edit?usp=share_link" target="_blank">Program3 Code</a></p>
+                            <p><span class="tag folder-tag">FILE</span> <a href="https://docs.google.com/document/d/1AUtUz-4I7wFVsdzHj0LBEOTWXMCsx45TCsdp6isX8vs/edit?usp=share_link" target="_blank">Program4 Code</a></p>
+                            <p><span class="tag folder-tag">FILE</span> <a href="https://docs.google.com/document/d/1_h9dxwwFuje88PjnMnkulgm38ROBkKuWdHwU9R6IGaM/edit?usp=share_link" target="_blank">Program5 Code</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            
+    </div>
+
+    <footer>
+        <p>&copy; 2026 機器學習與估計理論實驗室</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

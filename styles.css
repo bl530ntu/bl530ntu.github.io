@@ -42,26 +42,26 @@ body {
 }
 
 /* 桌機選單 */
-.navbar ul {
+.navbar > ul {
     display: flex;
     list-style: none;
     padding: 0;
 }
 
 /* 設定選單間距 */
-.navbar ul li {
+.navbar > ul > li {
     margin: 0 20px;
 }
 
 /* 設定連結樣式 */
-.navbar ul li a {
+.navbar > ul > li > a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
 }
 
-.navbar ul li a:hover {
+.navbar > ul > li > a:hover {
     color: lightgray;
 }
 
@@ -293,6 +293,21 @@ html {
 
 .course a:hover {
     text-decoration: underline;
+}
+
+.course-note {
+    text-align: center;
+    margin-top: -12px;
+    margin-bottom: 32px;
+
+    font-size: 17px;
+    font-weight: 500;
+    color: #777;
+}
+
+.course-note span {
+    color: #d4aa28;
+    font-weight: 700;
 }
 
 /* 研究頁面 */
@@ -938,24 +953,24 @@ html {
         justify-content: center; 
     }
 
-    .navbar ul {
+    .navbar > ul {
         display: flex;
         list-style: none;
         padding: 0;
     }
 
-    .navbar ul li {
+    .navbar > ul > li {
         margin: 0 20px;
     }
 
-    .navbar ul li a {
+    .navbar > ul > li > a {
         color: white;
         text-decoration: none;
         font-size: 18px;
         font-weight: bold;
     }
 
-    .navbar ul li a:hover {
+    .navbar > ul > li > a:hover {
         color: lightgray;
     }
 
@@ -974,3 +989,324 @@ html {
     }
 }
 
+/* 課程相關 */
+
+.course-container2 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.course2 {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 80%;
+}
+
+/* 課程標題 */
+.course2 h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* 超連結設置為金色*/
+.course2 a {
+    color: #D4AF37;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.course2 a:hover {
+    text-decoration: underline;
+}
+
+.tag {
+  display: inline-flex;
+  padding: 3px 5px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.ppt-tag {
+  background-color: #2f80ed;
+}
+
+.video-tag {
+  background-color: #eb5757;
+}
+
+.zip-tag {
+  background-color: #27ae60;
+}
+
+.folder-tag {
+  background-color: #8e44ad;
+}
+
+.week-card a {
+  color: #d6a51f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.week-card a:hover {
+  text-decoration: underline;
+}
+
+/* 課程下拉列表 */
+
+.navbar li.dropdown {
+    position: relative;
+}
+
+.navbar li.dropdown > .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 20px);
+    left: -100%;
+
+    min-width: 200px;
+    background-color: white;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+.navbar li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.navbar li.dropdown > .dropdown-menu li {
+    display: block;
+}
+
+.navbar li.dropdown > .dropdown-menu li a {
+    display: block;
+    padding: 12px 18px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: white;
+    font-size: 16px;
+}
+
+.navbar li.dropdown > .dropdown-menu li a:hover {
+    background-color: #f2f2f2;
+}
+
+.navbar li.dropdown > .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+/* 課程表格 */
+
+.topic-label {
+    background-color: #D4AF37;
+    display: inline-flex;
+    padding: 3px 5px;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 20px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.week-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.week-table th,
+.week-table td {
+    border: 1px solid #d8d8d8;
+    padding: 12px 16px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.week-table th {
+    background-color: #f0f0f0;
+    color: #111;
+}
+
+.week-table th:nth-child(1),
+.week-table td:nth-child(1) {
+    width: 20%;
+}
+
+.week-table th:nth-child(2),
+.week-table td:nth-child(2) {
+    width: 55%;
+}
+
+.week-table th:nth-child(3),
+.week-table td:nth-child(3) {
+    width: 25%;
+}
+
+.week-table2 {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.week-table2 th,
+.week-table2 td {
+    border: 1px solid #d8d8d8;
+    padding: 12px 16px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.week-table2 th {
+    background-color: #f0f0f0;
+    color: #111;
+}
+
+.week-table2 th:nth-child(1),
+.week-table2 td:nth-child(1) {
+    width: 50%;
+}
+
+.week-table2 th:nth-child(2),
+.week-table2 td:nth-child(2) {
+    width: 50%;
+}
+
+/* 助教 */
+
+.ta-en {
+    color: #777;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.comment {
+    background-color: #777;
+    padding: 3px 16px;
+    color: white;
+
+}
+
+
+
+/* 第一層選單連結與按鈕 */
+.dropdown-menu a,
+.submenu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 16px;
+
+    color: #333333;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: left;
+    text-decoration: none;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* 每一個有第二層選單的項目，都是自己的定位基準 */
+.dropdown-menu > .submenu {
+    position: relative;
+}
+
+/* 第二層選單 */
+.submenu-menu {
+    display: none;
+    position: absolute;
+
+    /* 出現在目前 hover 項目的右邊 */
+    top: 0;
+    left: 100%;
+
+    min-width: 220px;
+    margin: 0;
+    padding: 8px 0;
+
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    z-index: 1001;
+}
+
+/* Hover 到該課程時，才顯示它自己的年份選單 */
+.dropdown-menu > .submenu:hover > .submenu-menu {
+    display: block;
+}
+
+@media (min-width: 769px) {
+    /* 第一層下拉選單內的每一個項目 */
+    .navbar .dropdown-menu > li {
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 第二層年份選單預設隱藏 */
+    .navbar .dropdown-menu > li.submenu > .submenu-menu {
+        display: none;
+        position: absolute;
+
+        /* 對齊目前 hover 的項目 */
+        top: 0;
+        left: 100%;
+
+        min-width: 220px;
+        margin: 0;
+        padding: 8px 0;
+
+        list-style: none;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+        z-index: 1001;
+    }
+
+    /* 只有 hover 到該課程才顯示它自己的年份 */
+    .navbar .dropdown-menu > li.submenu:hover > .submenu-menu {
+        display: block;
+    }
+
+    /* 移除第二層 li 被主選單規則加上的間距 */
+    .navbar .submenu-menu > li {
+        margin: 0;
+        padding: 0;
+    }
+}

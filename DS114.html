@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Courses | 機器學習與估計理論實驗室</title>
+    <!-- 自訂 Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  <!-- 連結 CSS -->
+</head>
+<body>
+
+    <header><!--這個網頁的標題以及導覽頁-->
+        <div class="logo-container">
+            <img src="graph/Lab.png" alt="Machine Learning and Estimation Theory Lab" class="logo">
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="honor.html">Honor</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li class="dropdown">
+                    <a href="courses.html">Courses</a>
+
+                    <!-- 第一層下拉選單：課程名稱 -->
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="courses.html">All Courses</a>
+                        </li>
+
+                        <!-- Machine Learning -->
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Machine Learning
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <!-- 第二層下拉選單：年份 -->
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="ML114.html">ML 114-1 / Fall 2025</a>
+                                    <a href="ML113.html">ML 113-1 / Fall 2024</a>
+                                    <a href="ML112.html">ML 112-1 / Fall 2023</a>
+                                    <a href="ML111.html">ML 111-1 / Fall 2022</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Data Science -->
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Data Science
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <!-- 第二層下拉選單：年份 -->
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="DS114.html">DS 114-1 / Fall 2025</a>
+                                    <a href="DS113.html">DS 113-2 / Spring 2025</a>
+                                    <a href="DS112.html">DS 112-2 / Spring 2024</a>
+                                    <a href="DS111.html">DS 111-2 / Spring 2023</a>
+                                    <a href="DS110.html">DS 110-2 / Spring 2022</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Kernel Methods & Machine Learning
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <!-- 第二層下拉選單：年份 -->
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="KML114.html">KMML 114-2 / Spring 2026</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Exams -->
+                        <li class="submenu">
+                            <button type="button" class="submenu-toggle">
+                                Exams
+                                <span class="submenu-arrow">›</span>
+                            </button>
+
+                            <ul class="submenu-menu">
+                                <li>
+                                    <a href="past_exams.html">Past Exams</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="tool.html">Tools</a></li>
+                <li><a href="https://docs.google.com/document/d/1Y9mfpXuHCNyyigVUIFT3edRn_ccUpboa0mFNspiyRJs/edit?tab=t.0">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 內容區 -->
+    <div class="course-container2">
+        <h1>DATA STRUCTURE</h1>
+        <h3>114-1 / Fall 2025</h3>
+        <p><strong>TA:</strong> 王宜蓁 <span class="ta-en">(WANG, YI-CHEN)</span>, 林以洲 <span class="ta-en">(LIN, YI-CHOU)</span>, 金巧芸 <span class="ta-en">(CHIN, CHIAO-YUN)</span></p>
+        <p> 傅豐樺 <span class="ta-en">(FONG-HUA FU)</span>, 廖冠豪 <span class="ta-en">(LIAO, GUAN-HAU)</span></p>
+
+        <div class="course2">
+            <h2>WEEK 1 - 09/01</h2>
+            <h3><span class="topic-label">Topic</span> 1. Syllabus and Python basics<br>
+                &emsp;&emsp;&emsp;&emsp;2. Complexity Analysis - Part I: Big-Oh Notations</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1542ktJqP3apewIXWIBle0rmZ7cF_4w1U/view?usp=share_link" target="_blank">EE4022 Syllabus</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1-4p6ZO8vWf6Kj5wHbQOMV5Va4hInfinF/view?usp=share_link" target="_blank">Anaconda Install</a></p>
+                            <p><span class="tag zip-tag">ZIP</span> <a href="https://drive.google.com/file/d/1ZVF92RTYwDML_Pi_Jjo_n3lmG_4YiPrW/view?usp=share_link" target="_blank">L01: Introduction</a></p>
+                            <p><span class="tag zip-tag">ZIP</span> <a href="https://drive.google.com/file/d/1LBRVgAOI5PRnQlUd1XmnE-7tiAGsv7vI/view?usp=share_link" target="_blank">L02: Complexity Analysis</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">week1</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="course2">
+            <h2>WEEK 2 - 09/08</h2>
+            <h3><span class="topic-label">Topic</span>Complexity Analysis - Part II: Properties</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">week2</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="course2">
+            <h2>WEEK 3 - 09/15</h2>
+            <h3><span class="topic-label">Topic</span>Complexity Analysis - Part III: Algorithm analysis and C++ Basics</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">week3</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 4 - 09/22</h2>
+            <h3><span class="topic-label">Topic</span>Linear Data Structure: Stack, queue, deque, ordered/unordered linked list</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag zip-tag">ZIP</span> <a href="https://drive.google.com/file/d/1StkDsMsNB8hFXV-purpaCzP9u8MD5h2q/view?usp=share_link" target="_blank">L03: Linear Data Structure</a></p>
+                            <p><span class="tag zip-tag">ZIP</span> <a href="https://drive.google.com/file/d/1BwAEZnNskN5L3QmO6oc4HAnvcdVvye8X/view?usp=share_link" target="_blank">L04: Recursion Linear Programming</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1KUtg9qK5HVSAtaR9cDrJB-UOWJ7CdGLZ/view?usp=share_link" target="_blank">How to execute the scripy file on windows</a></p>
+                            <p><span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/1OtOchS1-H4xVNarKG_jb7X5fXv6nV7sP/view?usp=share_link" target="_blank">Master Theorem (補充教材)</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">week4</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 7 - 10/13</h2>
+            <h3><span class="topic-label">Topic</span>Binary Tree & AVL Tree</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1lUtzRa36NTrEZA4ZjfHOvUrPUUb6q4lT/view?usp=share_link" target="_blank">Trees</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1g5J44LvLDTKvgsSlXtZ53pOcr_i5s_br/view?usp=share_link" target="_blank">AVL Trees</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">week7</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 9 - 10/27</h2>
+            <h3><span class="topic-label">Topic</span>AVL Tree & Splay Tree</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/19ptWTOY4LWedJPdQ7C1CL7pDatLBRdBH/view?usp=share_link" target="_blank">Splay Trees</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">week9</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 10 - 11/03</h2>
+            <h3><span class="topic-label">Topic</span>Splay Tree</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1o4nFXOVLuaTgyOSSD7uSWWrD-wxtbG0Z/view?usp=share_link" target="_blank">Red Black Tree & AA Tree</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">week10</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 11 - 11/10</h2>
+            <h3><span class="topic-label">Topic</span>2-4 Tree & Red Black Tree & AA Tree</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/10vJA1oYj9cx6e6nqltBv81sXyg56aKzO/view?usp=share_link" target="_blank">Multi-way Search Trees - v1</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1Nk3KLSZ6rAd2Cj4c1qBi4zxdZJ1pntcj/view?usp=share_link" target="_blank">Multi-way Search Trees - v2</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1FG1iVvXOADzZt7IUJttXdzGz5dVdZZaW/view?usp=share_link" target="_blank">Red Black Tree & AA Tree - v1</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">week11</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 12 - 11/17</h2>
+            <h3><span class="topic-label">Topic</span>Hash & Binary Heap</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1Mozbq02iFYxljDoA4HSEgEsHrXVsCwP7/view?usp=share_link" target="_blank">Hashing</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1_-WFT42nKdjtvLb49j6EtVuDOU2PZO72/view?usp=share_link" target="_blank">Binary Heap</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">week12</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 13 - 11/24</h2>
+            <h3><span class="topic-label">Topic</span>Binomial Heap & Fibonacci Heap</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1vFJjM0NNMPt5WSqIqMNfw0pEcdenQAHh/view?usp=share_link" target="_blank">Binomial Heap</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1_B96P9R2jiZ61zdqmNoaHxb8c-vJH_yF/view?usp=share_link" target="_blank">Fibonacci Heap</a></p>
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/10KdI_ub2ig0OW_RRD1qTxd0n_5FYtezq/view?usp=share_link" target="_blank">Leftist Heap & Skew Heap</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">week13</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>WEEK 14 - 12/01</h2>
+            <h3><span class="topic-label">Topic</span>Disjoint Set</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1qp_LrlX0AXn6yNKpTv5zjh2pJ-fH1wz-/view?usp=share_link" target="_blank">Disjoint Set</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">week14</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="course2">
+            <h2>WEEK 15 - 12/08</h2>
+            <h3><span class="topic-label">Topic</span>Skip List</h3>
+            <table class="week-table2">
+                <thead>
+                    <tr>
+                        <th>Slide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PPT</span> <a href="https://drive.google.com/file/d/1KVwbqUdrHWqs7Ludrpf8ZI42dspGSsap/view?usp=share_link" target="_blank">Skip Lists</a></p>
+                        </td>
+                        <td class="video">
+                            <p><span class="tag video-tag">VIDEO</span> <a href="" target="_blank">week15</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        </br>
+        <h1>EXERCISE</h1>
+        
+        <div class="course2">
+            <h2>HOMEWORK</h2>
+            <table class="week-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="name">
+                            <p><b>Homework 1</b></p>
+                            <p><b>Homework 2</b></p>
+                            <p><b>Homework 3</b></p>
+                            <p><b>Homework 4</b></p>
+                            <p><b>Homework 5</b></p>
+                        </td>
+                        <td class="question">
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/1G5I4i9o3ir6XiUvBeObPMMY0yORdqTn8/view?usp=share_link" target="_blank">Asymptotic Analysis</a>
+                            </p>
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/1AlmAqXlRZWNAqgHTfJtWx3mJnEZe-mDN/view?usp=share_link" target="_blank">BellNumber, Complexity, Tree</a>
+                            </p>
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/1tbkzDCeL7x0m7zg1u2hnOhbTnV-vhoGd/view?usp=share_link" target="_blank">AVL, Splay Trees</a>
+                            </p>
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/1L_EelAnaHpEeuc4VhF2k1L33uzjn-Oaq/view?usp=share_link" target="_blank">2-4 Tree, Red Black Tree, AA Tree, Hash</a>
+                            </p>
+                            <p> <span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/1Ac10GLzeoyALtQ1laSfumhRRZ_S4f6M0/view?usp=share_link" target="_blank">Heaps, Disjoint Set</a>
+                            </p>
+                        </td>
+                        <td class="answer">
+                            <p><span class="comment">Not Available</span></p>
+                            <p><span class="comment">Not Available</span></p>
+                            <p><span class="comment">Not Available</span></p>
+                            <p><span class="comment">Not Available</span></p>
+                            <p><span class="comment">Not Available</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="course2">
+            <h2>PROGRAM</h2>
+            <table class="week-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Slide</th>
+                        <th>Code</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="name">
+                            <p><b>Program 1</b></p>
+                            <p><b>Program 2</b></p>
+                            <p><b>Program 3</b></p>
+                            <p><b>Program 4</b></p>
+                            <p><b>Program 5</b></p>
+                        </td>
+                        <td class="slide">
+                            <p><span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/11kgBPBE7wIEOpEb_A4pWx1j9veEfSS18/view?usp=share_link" target="_blank">Stack Implementation</a></p>
+                            <p><span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/1nwu6aJGXfY9Bl0z_PC_qbCFVuRgJdfr4/view?usp=share_link" target="_blank">Expression Tree</a></p>
+                            <p><span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/1eeerTfDL9akkDkubyYd6z6Io64gywoIw/view?usp=share_link" target="_blank">Binary Search Tree</a></p>
+                            <p><span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/1pOrRp71ho2_Nju0lqgADmw_RDmZ7Afcq/view?usp=share_link" target="_blank">Heap Implementation</a></p>
+                            <p><span class="tag ppt-tag">PDF</span> <a href="https://drive.google.com/file/d/1LwWLpZ1VhJIO-lQ5bIyjCBaryLmguWGf/view?usp=share_link" target="_blank">Lumberjack</a></p>
+                        </td>
+                        <td class="code">
+                            <p><span class="tag zip-tag">ZIP</span> <a href="https://drive.google.com/file/d/1em0oyQB3iMKxYb97CBEfhTavBKKzcpp2/view?usp=share_link" target="_blank">Program1 Code</a></p>
+                            <p><span class="tag zip-tag">ZIP</span> <a href="https://drive.google.com/file/d/1aScOgWuGCgkXTKVfVyE1uw5M3huvr2cJ/view?usp=share_link" target="_blank">Program2 Code</a></p>
+                            <p><span class="tag zip-tag">ZIP</span> <a href="https://drive.google.com/file/d/16ajioOY8BEhVEB3aohnEaD-nw8S2EpF3/view?usp=share_link" target="_blank">Program3 Code</a></p>
+                            <p><span class="tag zip-tag">ZIP</span> <a href="https://drive.google.com/file/d/1nyYDSERcYuxSn25Htn80QTX2BpW9ZwjF/view?usp=share_link" target="_blank">Program4 Code</a></p>
+                            <p><span class="tag zip-tag">ZIP</span> <a href="https://drive.google.com/file/d/1lwcOMKcQhPP-gCGmuWc1gptGrGCv2VU_/view?usp=share_link" target="_blank">Program5 Code</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            
+    </div>
+
+    <footer>
+        <p>&copy; 2026 機器學習與估計理論實驗室</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
