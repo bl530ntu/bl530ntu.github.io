@@ -78,7 +78,7 @@ body {
 /* 左邊文字區塊 */
 .text {
     width: 30%; 
-    padding-left: 100px;
+    padding-left: 200px;
     text-align: justify;
     word-wrap: break-word; 
     line-height: 2.0; 
@@ -87,7 +87,8 @@ body {
 /* 右邊圖片區塊 */
 .image {
     width: 50%; 
-    text-align: right; 
+    text-align: right;
+    padding-right: 50px;
 }
 
 /* 限制圖片大小，讓它不會超出範圍 */
@@ -151,7 +152,7 @@ body {
 .contact-container {
     display: flex;
     justify-content: center; /* 水平置中 */
-    gap: 100px; /* 設定左右間距 */
+    gap: 50px; /* 設定左右間距 */
     max-width: 800px;
     margin: 0 auto;
 }
