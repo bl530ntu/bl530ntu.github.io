@@ -69,7 +69,7 @@ body {
     display: flex; /* 讓內容橫向排列 */
     align-items: center; /* 讓內容垂直置中 */
     justify-content: space-between; /* 讓左右兩邊平均分佈 */
-    padding: 50px;
+    padding: 30px;
 }
 .text h1, .text h2 {
     font-size: 36px;
@@ -78,8 +78,8 @@ body {
 /* 左邊文字區塊 */
 .text {
     width: 30%; 
-    padding-left: 240px; 
-    text-align: justify; 
+    padding-left: 100px;
+    text-align: justify;
     word-wrap: break-word; 
     line-height: 2.0; 
 }
@@ -159,7 +159,7 @@ body {
 /* 左右欄位 */
 .contact-item {
     text-align: left;
-    width: 300px;
+    width: 350px;
 }
 
 /* 設定標題 */
